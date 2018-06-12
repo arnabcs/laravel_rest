@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-
-    <div class="row justify-content-center px-5 m-0">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <div class="row justify-content-center px-5 m-0 home">
 
         <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3 p-4">
             <div class="card">
