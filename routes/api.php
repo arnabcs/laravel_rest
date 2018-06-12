@@ -28,3 +28,7 @@ Route::post('login', 'Auth\LoginController@login');
 Route::post('logout', 'Auth\LoginController@logout');
 Route::post('send-password-reset-mail','UserController@sendPasswordResetMail');
 Route::post('reset-password','UserController@resetPassword');
+
+
+Route::get('get-counter','CounterController@getCounter');
+Route::post('update-counter','CounterController@updateCounter');
