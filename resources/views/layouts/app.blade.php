@@ -10,8 +10,7 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -71,9 +70,9 @@
         <main class="py-4">
             @yield('content')
         </main>
-        <footer class="text-center position-relative">
-            <h5>Designed and Developed By <b>Techeyre Solutions</b></h5>
-        </footer>
     </div>
+    <script src="{{ url('js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ url('js/app.js') }}"></script>
+    <script src="{{ url('js/getData.js') }}"></script>
 </body>
 </html>
