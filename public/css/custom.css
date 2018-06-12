@@ -1,0 +1,41 @@
+
+.card{
+    background-color: #fff;
+    /*background: url("../resources/simple-gears.png");*/
+    background-size: contain;
+    border-radius: 100px;
+    border: none !important;
+    font-family: "Inconsolata", "Fira Mono", "Source Code Pro", Monaco, Consolas, "Lucida Console", monospace;
+}
+.card-header
+{
+    color: #6d6d6d;
+    font-size: 30px;
+    border: none !important;
+}
+.card-footer
+{
+    border: none !important;
+}
+.card-body
+{
+    color: #608e9e;
+}
+.btn{
+    background-color: #608e9e;
+    color:#fff;
+}
+.on
+{
+    border-right:10px solid #00ff299e;
+    border-left:10px solid #00ff299e;
+}
+.off
+{
+    border-right:10px solid #ff00009e;
+    border-left:10px solid #ff00009e;
+}
+footer
+{
+    bottom: 0 !important;
+}
