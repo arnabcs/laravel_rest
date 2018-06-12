@@ -48,7 +48,7 @@ class LoginController extends Controller
             if ($user->api_token == null){
                 $user->generateToken();
             }
-            redirect()->route('login');
+            return redirect()->route('home');
         }
 
         return $this->sendFailedLoginResponse($request);
@@ -56,14 +56,14 @@ class LoginController extends Controller
 
     public function logout(Request $request)
     {
-        $user = Auth::guard('api')->user();
+        /*$user = Auth::guard('api')->user();
 
         if ($user) {
             $user->api_token = null;
             $user->save();
-            redirect()->route('login');
-        }
-
-        return response()->json(['data' => 'Invalid Token.'], 401);
+            return redirect()->route('login');
+        }*/
+        Auth::logout();
+        return redirect('/login');
     }
 }
