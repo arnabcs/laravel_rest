@@ -1,7 +1,7 @@
 setInterval(function(){
     $.ajax({
         method: 'GET',
-        url: 'http://localhost/laravel_rest_backend/public/api/get-counter',
+        url: base_url + '/api/get-counter',
         success: function(response){
             $('#m1').html(response.mc1);
             $('#m2').html(response.mc2);

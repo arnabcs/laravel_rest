@@ -73,6 +73,9 @@
     </div>
     <script src="{{ url('js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ url('js/app.js') }}"></script>
+    <script>
+        var base_url = '{{ URL::to('/') }}';
+    </script>
     <script src="{{ url('js/getData.js') }}"></script>
 </body>
 </html>
